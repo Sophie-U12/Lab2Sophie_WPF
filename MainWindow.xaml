@@ -1,0 +1,30 @@
+﻿<Window x:Class="Lab2Sophie_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2Sophie_WPF"
+        mc:Ignorable="d" FontSize="18"
+        Title="MainWindow" Height="350" Width="800">
+    <Grid>
+        <Label Content="Ім'я працівника:" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmployeeName" HorizontalAlignment="Left" Margin="177,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label Content="P Коефіцієнт:" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmployeePCoef" HorizontalAlignment="Left" Margin="177,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label Content="K Коефіцієнт:" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmployeeKCoef" HorizontalAlignment="Left" Margin="177,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Button x:Name="btnGetSalaryEmployee" Content="Разрахувати заробітну плату" HorizontalAlignment="Left" Margin="55,264,0,0" VerticalAlignment="Top" Width="265" Click="btnGetSalaryEmployee_Click"/>
+        
+        
+        <Label Content="Ім'я інженера:" HorizontalAlignment="Left" Margin="419,45,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEngineerName" HorizontalAlignment="Left" Margin="586,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label Content="P Коефіцієнт:" HorizontalAlignment="Left" Margin="419,94,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEngineerPCoef" HorizontalAlignment="Left" Margin="586,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label Content="K Коефіцієнт:" HorizontalAlignment="Left" Margin="419,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEngineerKCoef" HorizontalAlignment="Left" Margin="586,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Label Content="Кількість проєк.:" HorizontalAlignment="Left" Margin="419,199,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEngineerNumberOfProj" HorizontalAlignment="Left" Margin="586,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
+        <Button x:Name="btnGetSalaryEngineer" Content="Разрахувати заробітну плату" HorizontalAlignment="Left" Margin="464,264,0,0" VerticalAlignment="Top" Width="265" Click="btnGetSalaryEngineer_Click"/>
+
+    </Grid>
+</Window>
